@@ -1,0 +1,106 @@
+# Grundbegriffe der Rechnerorganisation
+
+## Datentechnik
+Datentechnik behandelt wortwörtlich die Technick der Daten.
+Man unterscheidet zwischen Daten und Informationen - Informationen entnimmt man Daten BSP. "Marc hat einen grauen Pullover" -> Die Information ist das es Marc sein Pullover ist
+
+Daten kann man verschicken, speichern oder löschen.
+Daten werden verschlüsselt und dann verschickt und vom Empfängergerät wieder entschlüsselt mit Hilfe vom OSI-Modell, der IP-Adresse und der MAC-Adresse. 
+IP=Internet Protocol
+MAC=Media Access Control
+Die Daten werden mit Hilfe von verschiedenen "Sprach-Tabellen" verschlüsselt beispielsweise utf-8, utf-16 oder unicode, diese Daten werden also in Nullen und Einsen verwandelt und ergeben somit dann ein Zeichen, Ziffer oder Buchstabe.
+BSP. "0010 1101" = "-" (nach UTF-8)
+Dadurch können Daten verkleinert werden und somit leichter verschickt, es ist auch praktischer da Geräte normalerweise auf der Basis 0 und 1 arbeiten und somit mit Leichtigkeit jene Daten entschlüsseln können.
+## Binärsystem
+Das Binärsystem beschäftigt sich mit 0 und 1 und kann Dezimal und Hexadezimal ins Binäre übersetzen.
+Das Binärsystem arbeitet eigentlich in einem 4 Block System (1 2 4 8),(16 32 64 128) usw.
+1              0001 
+2              0010
+4              0100
+8              1000
+16             1110
+32        0001 0000
+64        0010 0000
+128       0100 0000
+256       1000 0000
+1024 0001 0000 0000
+2048 0010 0000 0000
+
+Man kann natürlich jede Zahl ins binäre übersetzen, das ist besonders wichtig in Hinsicht auf elektronische Geräte welche überwiegend mit dem Binärsystem arbeiten.
+Es gehen auch Buchstaben, Ziffern oder Zeichen.
+## Hexadezimalsystem
+Das Hexadezimalsystem arbeitet mit den Zahlen 0-9 und geht weiter mit A-F in einem Block von 16 Zahlen 0-F
+0 0
+1 1
+2 2
+3 3
+4 4
+5 5
+6 6
+7 7
+8 8
+10 9
+10 A
+11 B
+12 C
+13 D
+14 E
+15 F
+Das Hexadezimalsystem lässt sich leicht verwenden mit dem Deziimalsystem und dem Binärsystem, diese Systeme können generell leicht mit einander arbeiten.
+Vom Dezimal zum Hexadezimal kommt man indem man die Dezimal-Zahl einfach durch 16 dividiert.
+Vom Binär zum Hexadezimal kommt man indem man die 4-Bits einfach einsetzt. BSP.
+8 4 2 1            8 4 2 1
+0 1 1 0            1 1 0 0
+4 + 2 = 6          8 + 4 = 12 -> C
+### UTF-8 Umrechnung
+Heute haben wir uns primär damit beschäftigt wie man vom Hexadezimal in Buchstaben, Ziffern und Zeichen übersetzen können.
+Wir haben dafür UTF-8 verwendet wo wir anhand der UTF-8 Tabelle Wörter (Buchstabe für Buchstabe) in das Hexadezimalsystem übersetzt haben.
+BSP.
+Lehrabschluss
+0100 1011 L
+0110 0101 e
+0110 1000 h
+0111 0010 r
+0110 0001 a 
+0110 0010 b
+0111 0011 s
+0110 0011 c 
+0110 1000 h
+0110 1100 l
+0111 0101 u
+0111 0011 s
+0111 0011 s
+
+Dabei ist mir aufgefallen das man für jeden Klein- und Großbuchstabe eine eigene Reihenfolge verwendet das heißt klein a in Hexadezimal ist nicht groß A in Hexadezimal.
+Es gibt das auch natürlich für andere Zeichen wie -+?§$& usw.
+## Dezimalsystem
+Das Dezimalsystem ist das Grundsystem welches man schon als Kind in der Schule verwendet es geht vom Zahlenraum 0-9.
+0,1,2,3,4,5,6,7,8,9 nennt man Ziffern aus diesen Ziffern kann man jede Zahl "bauen".
+123 = 1,2,3 
+Das Dezimalsystem geht in das negative wie das positive man verwendet es vorallem in der Algebra und der Mathematik.
+Unser Rechnungswesen ist in Dezimal aufgebaut.
+
+Man kann natürlich auch von Dezimal in Binär, Hexadezimal oder sonstige Systeme übersetzen.
+Von Dezimal ins Binäre kommt man in dem man durch 2 dividiert.
+Von Dezimal ins Hexadezimal kommt man in dem man durch 16 dividiert.
+
+## Operatoren
+Operatoren sind Zeichen welche uns helfen Werte zu manipulieren sprich Werte zu addieren, subtrahieren, multiplizieren, dividieren, zu vergleichen oder zu unterscheiden.
+Mathematische Operatoren: + - * /
+Vergleichs Operatoren: < > <= >=
+Logische Operatoren: & und || oder ! nicht
+Bitweise Operatoren << Linksverschiebungen >> Rechtsverschiebungen
+Zuweisungs Operatoren =
+Inkrement Operatoren ++ -- (Einen Wert um Eins verringern/erhöhen)
+### Operatortypen
+Es gibt verschiedene Operatortypen wie z.B. unäre, binäre oder tenäre Operatoren.
+
+Unäre Operatoren befassen sich immer nur mit einer Zahl. Ein Beispiel wäre Minus, Minus befasst sich immmer nur mit der Zahl welche hinter dem Minus steht. 1 - 1 = 0 (Das Minus befassst sich nur mit dem zweiten Einser)
+
+Binäre Operatoren befassen sich immer mit zwei Zahlen. Ein Beispiel wäre Plus, Plus befasst sich immer mit beiden Zahlen, speich der Zahl welche vor dem Plus steht und der Zahl welche hinter dem Plus steht. 1 + 1 = 2 (Das Plus befasst sich mit beiden Ziffern)
+
+Tenäre Operatoren befassen sich immer mit drei Zahlen. Ein Beispiel wäre in der Programmierspreche verwendet wenn, dann nicht ? = =!,hier ist es so das eine Frage gestellt wird wenn zwei Variablen a + b ein Ergebnis haben welches größer als beispielsweise 15 ist dann ist es 1 wenn es aber unter 15 ist dann ist es 0.
+### Operatorpräsidenz
+Die Operatorpräsidenz befasst sich mit der Hierachie (Abfolge) der Operatoren, welche zwischen Programmiersprachen meistens unterschiedlich sind.
+Eine der frühesten Prazidenzen welche wir kennen lernen ist KlaPuStri was bedeutet Klammer, Punkt vor Strich. Damit beschreibt man die Hierachie in der niederen Mathematik und setzt so eine Präsidenz.
+Heute haben wir uns mit dem Unterschied zwischen Python und Java befasst. Der Unterschied liegt bei den Beiden darin das Python potenzieren kann und steht dort an zweiter Stelle, bei Java war Potenzieren nicht auf zu finden.
