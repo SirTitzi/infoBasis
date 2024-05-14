@@ -1,0 +1,39 @@
+# Fachbegriffe
+High Level Programming Language-Sind Programmiersprachen die leicht zum lesen und schreiben für Menschen sind BSP:Java,Python,C++,Javascript | Können leicht auf verschiedenen Hardwares laufen
+Assembly Language-Benützt mnemonic codes und Symbole um Instructions und Daten herzustellen, was sie lesbarer als Maschinencodes macht. Dennoch entspricht sie direkt den Maschinenanweisungen, oft auf einer eins-zu-eins-Basis.BSP:Mips,x86
+MachineLanguage-Ist die niedrigste Ebene der Programmierung. Sie besteht aus Binärcode,der die Hardware des Computers direkt steuert.Jede Andweisung entspricht einem gewissen Vorgang BSP:ARM x86
+
+Abstraktionsebene bezieht sich auf die verschiedenen Hierarchie der Darstellungen-durch die unterschiedlichen Ebenen kann man Informationen betrachten und verarbeiten. Diese Ebenen ermöglichen eskomplexe Systeme in einfachere Teile zu zerlegen und sie auf eine Weise zu betrachten, die für bestimmte Zwecke relevant ist, ohne sich mit unnötigen Details befassen zu müssen.
+
+Die Abstraktionsebene in der Informationstechnologie bezieht sich auf das Konzept, Informationen auf unterschiedlichen Ebenen der Komplexität zu betrachten und zu verarbeiten. Diese Ebenen ermöglichen es, komplexe Systeme in einfachere Teile zu zerlegen und sie auf eine Weise zu betrachten, die für bestimmte Zwecke relevant ist, ohne sich mit unnötigen Details befassen zu müssen.
+
+Hier sind einige typische Abstraktionsebenen in der IT:
+
+Hardware-Ebene: Dies ist die unterste Ebene und befasst sich mit physischen Komponenten wie Prozessoren, Speicher, Festplatten usw.
+
+Betriebssystemebene: Hier werden abstrakte Konzepte wie Dateiverwaltung, Speicherzugriff und Prozessverwaltung betrachtet. Das Betriebssystem stellt eine Schnittstelle zwischen Hardware und Software dar.
+
+Programmierungsebene: Auf dieser Ebene werden Programmiersprachen und -paradigmen betrachtet. Entwickler arbeiten auf dieser Ebene, um Anwendungen und Software zu erstellen.
+
+Anwendungsebene: Dies ist die höchste Ebene, auf der Anwendungen und Softwarelösungen betrachtet werden. Hier werden Softwareprodukte wie Webanwendungen, mobile Apps, Datenbanken usw. entwickelt und genutzt.
+
+Instanzieren bedeutet eine Problem zu lösen und es auszubessern-Umsetzung einer Problemlösung
+
+Hexadezimalcode ist ein Zahlensystem, das auf der Basis 16 statt auf der Basis 10 wie das dezimale Zahlensystem funktioniert. Es verwendet Zahlen von 0 bis 9 sowie Buchstaben von A bis F, um Zahlen darzustellen. Jede Ziffer im hexadezimalen System repräsentiert eine Potenz von 16.
+
+Die Bedeutung der Hexadezimalzahlen liegt hauptsächlich in der Darstellung von Binärdaten. Da Computer Informationen in Form von Binärzahlen (0 und 1) speichern und verarbeiten, wird Hexadezimalcode oft verwendet, um Binärdaten auf eine für Menschen leichter lesbare Weise darzustellen.
+
+Ein Byte, das aus 8 Bits besteht, kann beispielsweise als zwei hexadezimale Ziffern dargestellt werden. Zum Beispiel entspricht die Binärzahl 10101100 dem hexadezimalen Wert AC.
+
+# Konzepte
+Beschreibe die ’von Neumann’ Architektur. Welche Komponente beschreibt diese und was ist deren
+grundlegende Funktion?
+(a) Was ist die ’Control Unit’? Ist eine Steuer Command was dazu verwendet wird um befehle auszuführen
+(b) Was ist die ’Arithmetic/Logic Unit’? Ist ein Teil innerhalb der CPU welcher dazu verwendet wird um Rechnungen durchzuführen
+(c) Was ist die ’Memory Unit’? Eine Speichereinheit
+(d) Was sind Register, was sind Addressen? Ein Register ist ein Zwischenspeicher welcher per Chip auf der CPU ist um die CPU noch effizienter zu machen
+14. Assembler z¨ahlt als die Programmiersprache die dem Maschinencode am n¨achste ist. Betrachte https:
+//dannyqiu.me/mips-interpreter/ und erkl¨are kurz was man auf dieser Webseite alles sieht.
+Auf dieser Seite kann man die verschiedenen Befehle einsehen und sind damit auch klar erkennbar
+
+# Assemblersprache
