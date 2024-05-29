@@ -1,0 +1,153 @@
+1
+Programming auf deutsch programmieren, bezieht sich auf den Prozess des Erstellens von Software von Code in verschiedenen Sprachen
+Coding-Codieren bezeichnet den Prozess des Schreibens von Anweisung in einer Programmiersprache
+Scripting-Skripterstellung zur automatisierung und das Schreiben von kleinen Programmen
+Hacking bezieht sich auf das Durchdringen von Computersystemen, Netzwerken und Softwaren
+
+2
+Program: Eine Reihe von Anweisungen die der Computer ausführt um eine Aufgabe zu erfüllen.
+
+Algorithm: Ist eine Abfolge von Befehlen zur Problemlösung.
+
+Code: Der Text der in einer Programmiersprache geschrieben wird.
+
+Application: Ist eine Anwendung wie z.B. Word, Powerpoint etc.
+
+Software: Gesamtheit aller Programme und Daten eines Computersystems.
+
+Script: Ein kleineres Programm, oft zur Automatisierung von Aufgaben, in einer Skriptsprache geschrieben.
+
+3
+High Level Language-Hochsprachen sind vom menschenlesbar und weiter von der Maschinesprache abstrahiert sind
+Assembly Language-ist eine lowlevel sprache die eine symbolische Repräsentation der Maschinensprache verwendet
+Machine Language-ist niedrigste Programmebene und besteht aus binären oder hexadezimalen Anweisungen, welche direkt von der CPU ausgeführt werden
+
+4
+Compiler
+
+Definition: Übersetzt den gesamten Quellcode in Maschinencode vor der Ausführung.
+Beispiele: GCC, javac.
+
+Interpreter
+
+Definition: Führt den Quellcode Zeile für Zeile direkt aus.
+Beispiele: Python-Interpreter, JavaScript-Interpreter.
+
+Unterschiede
+
+Übersetzung:
+Compiler: Vor der Ausführung.
+Interpreter: Während der Ausführung.
+
+Ergebnis:
+Compiler: Erzeugt eine ausführbare Datei.
+Interpreter: Führt den Code direkt aus.
+
+Geschwindigkeit:
+Compiler: Schneller (nach Übersetzung).
+Interpreter: Langsamer (zur Laufzeit).
+
+Fehlererkennung:
+Compiler: Vor Ausführung.
+Interpreter: Zur Laufzeit.
+5
+Kondition in der IT bedeutet so viel wie die Vorraussetzungen oder Bedingungen, die in Programmiersprachen und Softwareentwicklung verwendet werden
+
+Datentyp-Klassifikation von Daten, die festlegt welche Art von Werten eine Variable annehmen kann und welche Operationen auf diesen Werten durchgeführt werden können
+
+Schleife-eine Kontrollstruktur, die es ermöglicht, eine oder mehrere Anweisungen wiederholt auszuführen, solange eine bestimmte Bedingung erfüllt ist
+
+Kontrollstruktur-auf Mechanismen, die den Ablauf und die Ausführung von Anweisungen in einem Computerprogramm steuern
+
+Funktion-benannte Sequenz von Anweisungen, die eine spezifische Aufgabe ausführt und möglicherweise einen Wert zurückgibt. Funktionen sind eine grundlegende Bausteine in der Strukturierung von Programmen und ermöglichen es, Code zu organisieren, zu wiederverwenden und zu modularisieren
+
+Klasse-uf eine Vorlage oder einen Bauplan zur Erzeugung von Objekten. Klassen sind ein grundlegendes Konzept der objektorientierten Programmierung (OOP) und werden verwendet, um Daten und zugehörige Funktionen zu kapseln und zu organisieren
+
+Pseudocode-ist eine informelle, halbformale Notationsweise, die verwendet wird, um den logischen Ablauf eines Algorithmus oder eines Programms in natürlicher Sprache oder einer sprachähnlichen Syntax darzustellen, ohne sich auf die Syntax einer bestimmten Programmiersprache festzulegen. Es ist nützlich für die Planung und Beschreibung von Algorithmen, bevor sie in einer tatsächlichen Programmiersprache implementiert werden.
+
+8
+runden ← 0
+while N ̸= 5 do runden = runden + 1
+end while
+
+rauchen - 0
+while N ist nicht 5 do rauchen = rauchen + 1
+end while
+
+Alex - 0
+while N ist nicht 5 do anfassen = anfassen + 1
+end while
+
+Sprung - 0
+while N ist nicht 5 do springen = springen + 1
+end while
+
+Hemd - 0
+while N ist nicht 5 do stricken = stricken + 1
+end while
+
+Essen - 0
+while N ist nicht 5 do kochen = kochen + 1
+end while
+
+Pseudocode folgt keiner spezifischen Syntax oder Semantik. Es wird lediglich zur intuitiven Erkl¨arung
+von Algorithmen verwendet. Interpretiere folgenden Pseudocode-Beispiele. Erkl¨are was in jedem einzelnen
+Schritt passiert.
+
+Beispiel 1
+i ← 10
+if i ≥ 5 then
+i ← i − 1
+else
+if i ≤ 3 then
+i ← i + 2
+end if
+end if
+
+Beispiel 2
+Require: n ≥ 0
+Ensure: y = xn
+y ← 1
+X ← x
+N ← n
+while N ̸= 0 do
+if N is even then
+X ← X × X
+N ← N
+2
+else if N is odd then
+y ← y × X
+N ← N − 1
+end if
+end while
+
+Beispiel 3
+if i ≥ maxval then
+i ← 0
+else
+if i + k ≤ maxval then
+i ← i + k
+end if
+end if
+
+Beispiel 4
+Require: n ≥ 0 ∨ x ̸= 0
+3
+Ensure: y = xn
+y ⇐ 1
+if n < 0 then
+X ⇐ 1/x
+N ⇐ −n
+else
+X ⇐ x
+N ⇐ n
+end if
+while N ̸= 0 do
+if N is even then
+X ⇐ X × X
+N ⇐ N/2
+else[N is odd]
+y ⇐ y × X
+N ⇐ N − 1
+end if
+end while
