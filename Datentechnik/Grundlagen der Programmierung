@@ -61,7 +61,7 @@ Kontrollstruktur-auf Mechanismen, die den Ablauf und die Ausführung von Anweisu
 
 Funktion-benannte Sequenz von Anweisungen, die eine spezifische Aufgabe ausführt und möglicherweise einen Wert zurückgibt. Funktionen sind eine grundlegende Bausteine in der Strukturierung von Programmen und ermöglichen es, Code zu organisieren, zu wiederverwenden und zu modularisieren
 
-Klasse-uf eine Vorlage oder einen Bauplan zur Erzeugung von Objekten. Klassen sind ein grundlegendes Konzept der objektorientierten Programmierung (OOP) und werden verwendet, um Daten und zugehörige Funktionen zu kapseln und zu organisieren
+Klasse-Auf eine Vorlage oder einen Bauplan zur Erzeugung von Objekten. Klassen sind ein grundlegendes Konzept der objektorientierten Programmierung (OOP) und werden verwendet, um Daten und zugehörige Funktionen zu kapseln und zu organisieren
 
 Pseudocode-ist eine informelle, halbformale Notationsweise, die verwendet wird, um den logischen Ablauf eines Algorithmus oder eines Programms in natürlicher Sprache oder einer sprachähnlichen Syntax darzustellen, ohne sich auf die Syntax einer bestimmten Programmiersprache festzulegen. Es ist nützlich für die Planung und Beschreibung von Algorithmen, bevor sie in einer tatsächlichen Programmiersprache implementiert werden.
 
@@ -151,3 +151,172 @@ y ⇐ y × X
 N ⇐ N − 1
 end if
 end while
+
+## Flussdiagramme
+Ein Flussdiagramm ist eine grafische Veranschauligung eines Programmcodes um es übersichtltich darzustellen. Dieses Diagramm verläuft einer Richtung und fängt mit Start an und hört mit Stop auf.
+Es gibt verschiedene Strukturen innerhalb des Diagrammes welche es helfen die Übersicht zu verbessern beispiele dafür werden:
+-Raute verwendeten wir für Check und um dann von dort aus IF-Vergleiche aufzustellen
+-Quader verwendeten wir für Operationen wie Addieren, Subtrahieren, Multiplikation, Division, Potenzieren, Wurzel ziehen
+-Paralellogram für Definitionen, dort haben wir Variablen Werten gegeben
+
+BSP 10 
+1)
+Zeile 1 - 5; Werden den Variablen Werte zugeteilt
+Zeile 6 - 10; Die Variablen werden ausgegeben 
+
+2)
+Zeile 1 - 5; Den Variablen werden Wörter zugeteilt
+Zeile 6 - 10; Die Variablen werden ausgegeben
+
+11. F¨ur folgende Code-Snippets, welche Operationen sind zul¨assig, und welche nicht? Repariere unzul¨assige
+Operationen mit neuem Code, sodass das gesuchte Wort ausgegeben wird.
+# Beispiel 1.: Konvertierung
+g = 65
+h = 77.77
+i = ’Z’
+j = "Hallo!"
+print(g, float(g), chr(g))
+print(h, int(h), chr(h))
+print(i, int(i), float(i), ord(j))
+print(j, int(j), float(j), ord(j))
+Die zulässigen Operationen sind:
+
+1. print(g, float(g), chr(g)) - zulässig
+2. print(h, int(h), chr(h)) - unzulässig (da chr(h) nicht definiert ist)
+3. print(i, int(i), float(i), ord(j)) - unzulässig (da int(i) und float(i) nicht definiert sind)
+4. print(j, int(j), float(j), ord(j)) - unzulässig (da int(j) und float(j) nicht definiert sind)
+
+Hier ist der reparierte Code:
+
+g = 65
+h = 77.77
+i = ord('Z')
+j = "Hallo!"
+print(g, float(g), chr(g))
+print(int(h), h, chr(g))
+print(i, chr(i), float(i), ord(j))
+print(j, len(j), float(len(j)), ord(j))
+
+13. Was sind Operatoren?
+(a) Schreibe ein Pythonprogramm, welches die arithmetischen Operatoren ’plus’,’minus’,’mal’, ’dividiert’,
+’modulo’, ’potenzieren’ nutzt. Welche Pr¨azedenz (i.e. Reihenfolge) haben diese Operatoren?
+Die arithmetischen Operatoren in Python sind: plus (+), minus (-), mal (*), dividiert (/), modulo (%) und potenzieren (**). Die Reihenfolge der Präzedenz dieser Operatoren ist: Potenzieren, Mal/Dividiert/Modulo, Plus/Minus.
+
+(b) Schreibe ein Pythonprogramm, welches die bitweisen Operatoren ’And’, ’Or’, ’Xor’, ’Shift-left’,
+’Shift-right’, ’Not’ implementiert. Recherchiere kurz wie man diese Operatoren sinngebend nutzen
+kann (z.B. Xor-Swap, Multiplikation/Division mit 2, ...).
+Die bitweisen Operatoren in Python sind: And (&), Or (|), Xor (^), Shift-left (<<), Shift-right (>>), Not (~). Diese Operatoren werden verwendet, um Bitoperationen auf Ganzzahlen durchzuführen, z.B. für Bitweise Verknüpfungen oder Verschiebungen.
+
+(c) Schreibe ein Pythonprogramm, das logische Operatoren nutzt. Erkl¨are f¨ur die folgenden printstatements
+was f¨ur Werte und Typen ausgegeben wird. Beschreibe die Statements in Umgangssprache.
+print([] is not True), print("" == False), print("False" == True),
+print(0 != True), print(’0’ != False), print("a" == ’a’),
+print(not ((not 5 >= 5) < 2)), print(’a’ in "Hallo!"),
+print(int(3) == str(3)), print(int(3) == float(3.00))
+Die logischen Operatoren in Python sind: is, ==, !=, in, not. Die printstatements geben folgende Werte und Typen aus: False, True, False, True, True, True, False, True, False, True.
+
+14. Wie funktionieren diese Operatoren, wenn man sie bei komplexen Datentypen einsetzt? Beantworte
+folgende Fragen mit Wahr oder Falsch, begr¨undet mithilfe eines Python-Programmes.
+(a) F¨ur ein Set ’(0,1,2)’: Der Wert an Index 1 ist 0. Verifiziere in Python mittels ’set[1]’.
+ Falsch. Ein Set in Python ist nicht indexiert, daher kann man nicht auf Elemente über Indizes zugreifen.
+
+(b) F¨ur ein Set ’(”Hallo”, ”Welt”)’: Das Set hat L¨ange 1, da die Indezes 0 und 1 sind. Verifiziere in
+Python mittels ’len(Set)’.
+Falsch. Ein Set mit zwei Elementen hat eine Länge von 2, nicht 1.
+
+(c) F¨ur eine Liste, mit der Indexierung [0],[1],[2]: Erh¨oht man den Index von 1 um 1, so wird die Liste
+fortan mit [0], [2], [2] indexiert.
+ Falsch. Wenn man den Index von 1 um 1 erhöht, wird die Liste mit [0], [2], [2] indexiert.
+
+(d) F¨ur eine Liste mit der Indexierung [0],[1],[2]: Um den Wert an Position [2] zu erh¨ohen, so muss
+man ’Liste[2] = Liste[2] + 1’ nutzen.
+Falsch. Um den Wert an Position [2] in einer Liste zu erhöhen, muss man 'Liste[2] += 1' verwenden.
+
+17. Wie definiert man eine Funktion in Python? Gibt es eine Main-Funktion?
+Eine Funktion in Python ist ein Codeblock, der einen bestimmten Task ausführt und mit einem Namen versehen ist. So kann man den Code an verschiedenen Stellen im Programm wiederverwenden, ohne ihn jedes Mal neu schreiben zu müssen.
+
+18. Erstelle eine Funktion f¨ur folgende Problemstellungen. Setze passende R¨uckgabewerte f¨ur den Caller.
+(a) Erstelle eine Funktion ”sum(a, b, c, d)”, welche die Summe von a,b,c,d zur¨uckgibt.
+def sum(a, b, c, d):
+    return a + b + c + d
+result = sum(1, 2, 3, 4)
+print(result)  # Ausgabe: 10
+
+(b) Erstelle eine Funktion ”revert(array)”, welche den Inhalt eines Arrays reversiert.
+Beispiel: [2, 4, 6] - [6, 4, 2], [′′abc′′,′′ cba′′] - [′′cba′′,′′ abc′′]
+def revert(array):
+    """
+    Reverses the content of the given array.
+
+    Parameters:
+    array (list): The array to be reversed.
+
+    Returns:
+    list: A new array with the elements in reverse order.
+    """
+    return array[::-1]
+
+# Beispiele:
+print(revert([2, 4, 6]))            # Ausgabe: [6, 4, 2]
+print(revert(['abc', 'cba']))       # Ausgabe: ['cba', 'abc']
+Erklärung:
+Parameter:
+
+Die Funktion nimmt eine Liste (array) als Eingabe.
+Verarbeitung:
+
+array[::-1] ist eine Python-Slicing-Syntax, die die Liste in umgekehrter Reihenfolge zurückgibt.
+Rückgabewert:
+
+Die Funktion gibt die umgekehrte Liste zurück.
+Mit diesem Code kannst du eine beliebige Liste umkehren, egal ob sie Zahlen, Strings oder andere Objekte enthält.
+
+(c) Erstelle eine Funktion ”trim(array, x, y)’, welche den Inhalt des Arrays von ’x’ bis ’y’ zur¨uckgibt.
+Beispiel: trim([0, 1, 2, 3, 4], 1, 3) - [1, 2, 3]
+def trim(array, x, y):
+    """
+    Returns a sublist of the given array from index x to index y (inclusive).
+
+    Parameters:
+    array (list): The array to be trimmed.
+    x (int): The starting index.
+    y (int): The ending index.
+
+    Returns:
+    list: A sublist of the array from index x to index y (inclusive).
+    """
+    if x < 0 or y >= len(array) or x > y:
+        return "Invalid indices"
+    
+    return array[x:y+1]
+
+# Beispiele:
+print(trim([0, 1, 2, 3, 4], 1, 3))  # Ausgabe: [1, 2, 3]
+print(trim(['a', 'b', 'c', 'd'], 0, 2))  # Ausgabe: ['a', 'b', 'c']
+Erklärung:
+Parameter:
+
+Die Funktion nimmt eine Liste (array), einen Startindex (x) und einen Endindex (y) als Eingabe.
+Verarbeitung:
+
+Die Funktion prüft, ob die Indizes x und y innerhalb der Grenzen des Arrays liegen und ob x kleiner oder gleich y ist. Wenn eine dieser Bedingungen nicht erfüllt ist, wird "Invalid indices" zurückgegeben.
+Ansonsten wird die Teilliste array[x:y+1] zurückgegeben, die die Elemente von Index x bis y enthält.
+Rückgabewert:
+
+Die Funktion gibt die Teilliste zurück, oder "Invalid indices" wenn die Eingabe ungültig ist.
+
+(d) Erstelle eine Funktion ”compare(a,b)”, welche die Elemente auf Wert und Typ kontrolliert. Ist der
+Wert gleich, gib ”Wert ist gleich.” aus. Ist der Typ gleich, gib ”Typ ist gleich.” aus. Sollte beides
+ungleich sein, so gebe ”Werte sind ungleich” aus.
+Beispiel: compare(5, 5.0) - ′′Wertistgleich.′′, compare(3.141, 2.718) - ′′Typistgleich.′′
+
+def 
+a = 5
+b = 5.0
+
+type, a
+type, b
+
+compare (5,5.0) -> print "Wert ist Gleich" if 5!=5.0 print "Wert ist ungleich"
+compare (5,5.0) -> print "Typ ist gleich"  if 5!=5.0 print "Typ ist ungleich"
+
