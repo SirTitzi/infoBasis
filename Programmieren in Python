@@ -169,6 +169,7 @@ class Dog(Animal):
 
     def into(self):
         return f"I am a dog named (self.name)."
+Hier beschreibe ich eine Klasse eines Tieres definiert nämlch einen Hund welcher ein Geräusch macht - Woof und man kann ihm einen Namen geben
 
 class Cat(Animal):
     def speak(self):
@@ -176,3 +177,4 @@ class Cat(Animal):
 
     def into(self):
         return f"I am a cat named (self.name)."
+Hier beschreibe ich eine Klasse eines Tieres definiert nämlch eine Katze welche ein Geräusch macht - Meow und man kann ihr einen Namen geben
