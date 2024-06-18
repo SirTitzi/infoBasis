@@ -5,54 +5,59 @@ regen = False
 
 if regen == False:
     print ("laufen")
-    
+Wenn es nicht regnet dann kann ich laufen gehen.    
 regen = True
 
 if regen == True:
     print ("Zuhause bleiben")
-
+Wenn es regnet bleibe ich Zuhause
 Toilette = True
 
 if Toilette == True:
     print ("Zur Toilette gehen")
-
+Wenn ich auf die Toilette muss dann gehe ich zur Toilette
 Sonne = True
 
 if Sonne == True:
     print ("Zum Strand gehen")
-
+Wenn die Sonne scheint gehe ich zum Strand
 Kalt = True
 
 if Kalt == True:
     print ("Eine Jacke anziehen")
-
+Wenn es kalt ist dann brauche ich eine Jacke
 Warm = True
 
 if Warm == True:
     print ("Ich will ein Eis")
+Wenn es warm ist dann gönne ich mir ein Eis
 # Schleifen
 Schleifen sind Wiederholungen bis man einen bestimmten Wert erfüllt hat oder ansonsten geht die Schleife bis in die Unendlichkeit weil Schleifen eine fortführende Wiederholung sind.
 runden = 0
 for Zahl in range(0,5):
     runden = runden + 1
     print ("Runden",runden)
-
+Ich laufe 5 Runden, sobald ich die fünfte habe höre ich auf
 Äpfel = 0
 for Zahl in range(0,23):
     Äpfel = Äpfel + 1
     print ("Äpfel",Äpfel)
+Ich zähle meine Äpfel ich habe 23 Äpfel
 Zitronenbaum = 0
 for Zahl in range(0,3):
     Zitronenbaum = Zitronenbaum + 1
     print ("Zitronenbaum",Zitronenbaum)
+Ich zähle meine Zitronenbäume im garten, es sind 3 Zitronenbäume
 Radelfahren = 0
 for Zahl in range(0,12):
     Radelfahren = Radelfahren + 1
     print ("Radelfahren",Radelfahren)
+Ich fahre mit einem Radel um einen Block sobald ich 12 umfahren habe höre ich auf
 Streußelkuchen = 0
 for Zahl in range(0,5):
     Streußelkuchen = Streußelkuchen + 1
     print ("Streußelkuchen",Streußelkuchen)
+Ich zähle meine Streußelkuchen im Ofen es sind 5 Streußelkuchen
 # Funktionen
 Funktionen sind Rechnungen die man in den Code hinzufügt um den Code dem entsprechend zu erweitern. Funktionen spielen in den meisten Fällen Aritmetische Rechnungen durch welche dann mit der Schleife zusammengefügt werden umso das Ergebnis verändern.
 runden = 0
@@ -62,6 +67,7 @@ for Zahl in range(0,10):
     print ("Runden",runden)
     if (runden % 2 == 0): 
         print ("trinken")
+Ich laufe 10 runden und jede zweite Runde mache ich eine Trinkpause
 Kind = 0
 for Zahl in range(0,6):
     Kind = Kind + 1
@@ -69,6 +75,7 @@ for Zahl in range(0,6):
     print ("Kind",Kind)
     if (Kind % 1 == 0): 
         print ("Name des Kindes")
+Jedes der  6 Kinder hat einen Name
 Haus = 0
 for Haus in range(0,8):
     Haus = Haus + 1
@@ -76,6 +83,7 @@ for Haus in range(0,8):
     print ("Haus",Haus)
     if (Haus % 1 == 0): 
         print ("Hausnummer")
+Jedes der8 Häuser hat eine Hausnummer
 Alex = 0
 for Alex in range(0,23):
     Alex = Alex + 1
@@ -83,13 +91,15 @@ for Alex in range(0,23):
     print ("Alex",Alex)
     if (Alex % 1 == 0): 
         print ("Bandscheibenvorfall")
+Alex hatte bei all seinen 23 Bandscheiben einen Bandscheibenvorfall
 Pumpen = 0
 for Pumpen in range(0,8):
     Pumpen = Pumpen + 1
 
     print ("Pumpen",Pumpen)
     if (Pumpen % 8 == 0): 
-        print ("Pause")     
+        print ("Pause")
+Ich pumpe für 8 Runden
 # Klasse
 Klassen bestimmen etwas und bestimmen den Wert in verschiedener Hinsicht. Als Beispiel wenn man einen Mensch definiert kann man ihn auch weiter spezifizieren und die Anzahl der Körperteile und ihm auch weiter Konditionen gib wie zum Beispiel Benjamin hatte schon 3 Bandscheibenvorfälle.
 class Benjamin:
@@ -99,6 +109,7 @@ class Benjamin:
     Bandscheibe = "12"
     Herkunft = "Albanien"
     sprechen = print ("Sie war 12")
+Hier beschreibe ich Benjamin, er hat 2 beine, Haarausfall, er fliegt, hat nur noch 12 Bandscheiben, kommt aus Albanien, "Sie war 12"
 class Irnes:
     beine = 2
     Haare = "Buzzcut"
@@ -106,24 +117,28 @@ class Irnes:
     Brustbehaarung = "Wie ein Bär"
     Herkunft = "Bosnien"
     sprechen = print ("Fahre zur Mensa überfahre den Rentner")
+Hier beschreibe ich Irnes, er hat 2 Beine, Buzzcut, er steht am Boden, Er hat eine Brustbehaarung wie ein Bär, er kommt aus Bosnien, "Fahre zur Mensa überfahre den Rentner"
 class Marc:
     beine = 2
     Haare = "Verloren"
     amBoden = True
     Herkunft = "Ettendorf"
     sprechen = print ("Um gottes Wüln")
+Hier beschreibe ich Marc, er hat 2 Beine, seine Haare sind bodenlos verloren,  er steht am Boden, kommt aus Ettendorf, "Um Gottes Wüln"
 class Gosch:
     beine = 2
     Haare = "Fatal"
     amBoden = True
     Herkunft = "Polen"
     sprechen = print ("Kurwa")
+Hier beschreibe ich Herrn Gosch, er hat 2 Beine, seine Haare sind Fatal, er steht am Boden, er kommt aus Polen, "Kurwa"
 class Streußelkuchen:
     beine = 2
     Haare = "Wie ein alter Mann"
     amBoden = True
     Herkunft = "Pension"
     sprechen = print ("Jungs")
+Hier beschreibe ich den Herrn Streußelkuchen, er hat 2 Beine, seine Haare sind die vom einen alten Mann, er steht am Boden, er kommt aus der Pension, ""<Jungs
 
 # Objektorientierte Programmierung
 ist ein Programmierparadigma, das auf Konzepten von Objekten und Klassen basiert. 
@@ -146,3 +161,18 @@ Dies bedeutet, komplexe Systeme durch einfachere, abstrakte Darstellungen zu mod
 
 ## Definition einer Klasse in Python
 In Python wird eine Klasse mit dem Schlüsselwort class definiert. Innerhalb einer Klasse werden Methoden (Funktionen) und Attribute (Variablen) definiert.
+
+# Beispiele
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+    def into(self):
+        return f"I am a dog named (self.name)."
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+
+    def into(self):
+        return f"I am a cat named (self.name)."
