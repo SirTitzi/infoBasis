@@ -1,0 +1,148 @@
+## Programmieren in Pyrhon
+# Konditionen
+Konditionen sind Bedingungen welche wenn man setzt und wenn man diese einhält wird etwas ausgegeben und wenn man die Bedingung nicht erfüllt bekommt man etwas anderes heraus
+regen = False
+
+if regen == False:
+    print ("laufen")
+    
+regen = True
+
+if regen == True:
+    print ("Zuhause bleiben")
+
+Toilette = True
+
+if Toilette == True:
+    print ("Zur Toilette gehen")
+
+Sonne = True
+
+if Sonne == True:
+    print ("Zum Strand gehen")
+
+Kalt = True
+
+if Kalt == True:
+    print ("Eine Jacke anziehen")
+
+Warm = True
+
+if Warm == True:
+    print ("Ich will ein Eis")
+# Schleifen
+Schleifen sind Wiederholungen bis man einen bestimmten Wert erfüllt hat oder ansonsten geht die Schleife bis in die Unendlichkeit weil Schleifen eine fortführende Wiederholung sind.
+runden = 0
+for Zahl in range(0,5):
+    runden = runden + 1
+    print ("Runden",runden)
+
+Äpfel = 0
+for Zahl in range(0,23):
+    Äpfel = Äpfel + 1
+    print ("Äpfel",Äpfel)
+Zitronenbaum = 0
+for Zahl in range(0,3):
+    Zitronenbaum = Zitronenbaum + 1
+    print ("Zitronenbaum",Zitronenbaum)
+Radelfahren = 0
+for Zahl in range(0,12):
+    Radelfahren = Radelfahren + 1
+    print ("Radelfahren",Radelfahren)
+Streußelkuchen = 0
+for Zahl in range(0,5):
+    Streußelkuchen = Streußelkuchen + 1
+    print ("Streußelkuchen",Streußelkuchen)
+# Funktionen
+Funktionen sind Rechnungen die man in den Code hinzufügt um den Code dem entsprechend zu erweitern. Funktionen spielen in den meisten Fällen Aritmetische Rechnungen durch welche dann mit der Schleife zusammengefügt werden umso das Ergebnis verändern.
+runden = 0
+for Zahl in range(0,10):
+    runden = runden + 1
+
+    print ("Runden",runden)
+    if (runden % 2 == 0): 
+        print ("trinken")
+Kind = 0
+for Zahl in range(0,6):
+    Kind = Kind + 1
+
+    print ("Kind",Kind)
+    if (Kind % 1 == 0): 
+        print ("Name des Kindes")
+Haus = 0
+for Haus in range(0,8):
+    Haus = Haus + 1
+
+    print ("Haus",Haus)
+    if (Haus % 1 == 0): 
+        print ("Hausnummer")
+Alex = 0
+for Alex in range(0,23):
+    Alex = Alex + 1
+
+    print ("Alex",Alex)
+    if (Alex % 1 == 0): 
+        print ("Bandscheibenvorfall")
+Pumpen = 0
+for Pumpen in range(0,8):
+    Pumpen = Pumpen + 1
+
+    print ("Pumpen",Pumpen)
+    if (Pumpen % 8 == 0): 
+        print ("Pause")     
+# Klasse
+Klassen bestimmen etwas und bestimmen den Wert in verschiedener Hinsicht. Als Beispiel wenn man einen Mensch definiert kann man ihn auch weiter spezifizieren und die Anzahl der Körperteile und ihm auch weiter Konditionen gib wie zum Beispiel Benjamin hatte schon 3 Bandscheibenvorfälle.
+class Benjamin:
+    beine = 2
+    Haare = "Haarausfall"
+    amBoden = False
+    Bandscheibe = "12"
+    Herkunft = "Albanien"
+    sprechen = print ("Sie war 12")
+class Irnes:
+    beine = 2
+    Haare = "Buzzcut"
+    amBoden = True
+    Brustbehaarung = "Wie ein Bär"
+    Herkunft = "Bosnien"
+    sprechen = print ("Fahre zur Mensa überfahre den Rentner")
+class Marc:
+    beine = 2
+    Haare = "Verloren"
+    amBoden = True
+    Herkunft = "Ettendorf"
+    sprechen = print ("Um gottes Wüln")
+class Gosch:
+    beine = 2
+    Haare = "Fatal"
+    amBoden = True
+    Herkunft = "Polen"
+    sprechen = print ("Kurwa")
+class Streußelkuchen:
+    beine = 2
+    Haare = "Wie ein alter Mann"
+    amBoden = True
+    Herkunft = "Pension"
+    sprechen = print ("Jungs")
+
+# Objektorientierte Programmierung
+ist ein Programmierparadigma, das auf Konzepten von Objekten und Klassen basiert. 
+Es ermöglicht die Organisation von Software in wiederverwendbare, modularisierte und skalierbare Einheiten. 
+
+## Klassen und Objekte
+Klassen und Objekte: Eine Klasse ist eine Blaupause für Objekte. Sie definiert Eigenschaften (Attribute) und Verhaltensweisen (Methoden), die die Objekte haben werden. Ein Objekt ist eine Instanz einer Klasse.
+
+## Vererbung
+Klassen können von anderen Klassen erben, was bedeutet, dass sie die Attribute und Methoden der Basisklasse übernehmen und erweitern können.
+
+## Kapselung
+Dies ist das Konzept, Daten und Methoden, die auf diese Daten operieren, zusammen in einer Klasse zu kapseln und den Zugang zu diesen Daten zu kontrollieren.
+
+## Polymorphismus
+Dies erlaubt es, unterschiedliche Klassen mit ähnlichen Schnittstellen zu behandeln, so dass dieselbe Methode auf Objekten verschiedener Klassen aufgerufen werden kann.
+
+## Abstraktion
+Dies bedeutet, komplexe Systeme durch einfachere, abstrakte Darstellungen zu modellieren, wobei nur die relevanten Details dargestellt werden.
+
+## Definition einer Klasse in Python
+In Python wird eine Klasse mit dem Schlüsselwort class definiert. Innerhalb einer Klasse werden Methoden (Funktionen) und Attribute (Variablen) definiert.
