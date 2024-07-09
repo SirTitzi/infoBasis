@@ -1,0 +1,216 @@
+1. Shells und Shellprogrammierung
+Befehle
+whoami: Gibt den Namen des aktuell angemeldeten Benutzers aus.
+
+Beispiel: whoami zeigt "user" für den Benutzer "user" an.
+Flags: keine spezifischen Flags.
+echo: Gibt Text auf der Konsole aus.
+
+Beispiel: echo "Hallo Welt" gibt "Hallo Welt" aus.
+Flags: -n (keine neue Zeile), -e (aktiviert Escape-Sequenzen), --help (zeigt Hilfe an).
+su: Wechselt zu einem anderen Benutzer.
+
+Beispiel: su root wechselt zum Benutzer root.
+Flags: - (lädt die Umgebung des Benutzers), -c (führt einen Befehl aus), -m (beibehaltung der aktuellen Umgebung).
+sudo: Führt Befehle als Superuser aus.
+
+Beispiel: sudo apt-get update aktualisiert Paketlisten.
+Flags: -u (führt als anderer Benutzer aus), -k (vergisst Passwort), -b (führt im Hintergrund aus).
+ls: Listet Dateien und Verzeichnisse auf.
+
+Beispiel: ls /home listet den Inhalt von /home auf.
+Flags: -l (detaillierte Liste), -a (alle Dateien), -h (lesbare Größen).
+wc: Zählt Zeilen, Wörter und Bytes.
+
+Beispiel: wc -l datei.txt zählt die Zeilen in datei.txt.
+Flags: -l (Zeilen zählen), -w (Wörter zählen), -c (Bytes zählen).
+cp: Kopiert Dateien und Verzeichnisse.
+
+Beispiel: cp quelle.txt ziel.txt kopiert quelle.txt nach ziel.txt.
+Flags: -r (rekursiv kopieren), -i (Bestätigung vor Überschreiben), -v (ausführliche Ausgabe).
+mv: Verschiebt oder benennt Dateien und Verzeichnisse um.
+
+Beispiel: mv altername.txt neuername.txt benennt eine Datei um.
+Flags: -i (Bestätigung vor Überschreiben), -u (nur aktualisieren), -v (ausführliche Ausgabe).
+rm: Löscht Dateien und Verzeichnisse.
+
+Beispiel: rm datei.txt löscht datei.txt.
+Flags: -r (rekursiv löschen), -f (erzwingt löschen), -i (Bestätigung vor Löschen).
+touch: Ändert Zeitstempel von Dateien oder erstellt leere Dateien.
+
+Beispiel: touch neue_datei.txt erstellt eine neue leere Datei.
+Flags: -a (ändert Zugriffszeit), -m (ändert Änderungszeit), -t (setzt Zeitstempel).
+mkdir: Erstellt Verzeichnisse.
+
+Beispiel: mkdir neuer_ordner erstellt einen neuen Ordner.
+Flags: -p (erstellt übergeordnete Verzeichnisse), -v (ausführliche Ausgabe), -m (setzt Rechte).
+Shellskript erstellen und ausführen
+Um ein Shellskript zu erstellen, öffnen Sie einen Texteditor und schreiben die Befehle hinein. Speichern Sie die Datei mit der Endung .sh, z.B. script.sh. Machen Sie das Skript ausführbar mit chmod +x script.sh und führen Sie es aus mit ./script.sh.
+
+Bedingungen
+if + else:
+if [ $zahl -gt 10 ]; then
+  echo "Zahl ist größer als 10"
+else
+  echo "Zahl ist 10 oder kleiner"
+fi
+
+
+if [ -f "datei.txt" ]; then
+  echo "Datei existiert"
+else
+  echo "Datei existiert nicht"
+fi
+
+
+case:
+case $wahl in
+  1) echo "Option 1 gewählt" ;;
+  2) echo "Option 2 gewählt" ;;
+  *) echo "Ungültige Wahl" ;;
+esac
+
+
+case $tier in
+  hund) echo "Wau Wau" ;;
+  katze) echo "Miau" ;;
+  *) echo "Unbekanntes Tier" ;;
+esac
+
+
+Schleifen
+for:
+for i in 1 2 3; do
+  echo "Zahl: $i"
+done
+
+
+for datei in *.txt; do
+  echo "Datei: $datei"
+done
+
+
+while:
+counter=1
+while [ $counter -le 5 ]; do
+  echo "Counter: $counter"
+  counter=$((counter + 1))
+done
+
+
+while read -r line; do
+  echo "Zeile: $line"
+done < datei.txt
+
+
+until:
+counter=1
+until [ $counter -gt 5 ]; do
+  echo "Counter: $counter"
+  counter=$((counter + 1))
+done
+
+
+until [ -f "fertig.txt" ]; do
+  echo "Warte auf fertig.txt"
+  sleep 1
+done
+
+
+2. Nutzer- und Dateiverwaltungen
+Verzeichnisbegriffe
+Wurzelverzeichnis: Das oberste Verzeichnis in der Hierarchie, dargestellt als /.
+
+Beispiel: /bin, /usr.
+Aktuelles Arbeitsverzeichnis: Das Verzeichnis, in dem der Benutzer aktuell arbeitet.
+
+Beispiel: pwd zeigt /home/user.
+Vollständige Pfadangabe: Ein Pfad, der vom Wurzelverzeichnis ausgehend angegeben wird.
+
+Beispiel: /home/user/datei.txt.
+Relative Pfadangabe: Ein Pfad relativ zum aktuellen Verzeichnis.
+
+Beispiel: ../datei.txt (eine Ebene höher).
+Vollständiger Dateiname: Der Name inklusive Erweiterung.
+
+Beispiel: bericht.docx.
+Vollständiger Pfadname: Der gesamte Pfad bis zur Datei.
+
+Beispiel: /home/user/dokumente/bericht.docx.
+Punkte: Spezielle Verzeichnisangaben, . für das aktuelle Verzeichnis und .. für das übergeordnete Verzeichnis.
+
+Beispiel: cd .. wechselt in das übergeordnete Verzeichnis.
+Nutzer- und Gruppenbegriffe
+UID: User ID, eine eindeutige Kennung für Benutzer.
+
+Beispiel: id -u zeigt die UID an.
+GID: Group ID, eine eindeutige Kennung für Gruppen.
+
+Beispiel: id -g zeigt die GID an.
+RUID: Real User ID, die tatsächliche Benutzer-ID eines Prozesses.
+
+RGID: Real Group ID, die tatsächliche Gruppen-ID eines Prozesses.
+
+EUID: Effective User ID, die effektive Benutzer-ID, die für Berechtigungen verwendet wird.
+
+EGID: Effective Group ID, die effektive Gruppen-ID, die für Berechtigungen verwendet wird.
+
+FSUID: Filesystem User ID, wird für Zugriffsrechte auf Dateien verwendet.
+
+FSGID: Filesystem Group ID, wird für Zugriffsrechte auf Dateien verwendet.
+
+Benutzer- und Gruppenbefehle
+useradd: Fügt einen neuen Benutzer hinzu.
+
+Beispiel: useradd benutzername.
+Flags: -m (erstellt Heimatverzeichnis), -s (setzt Shell), -g (setzt primäre Gruppe).
+usermod: Ändert Benutzerinformationen.
+
+Beispiel: usermod -l neuername altername.
+Flags: -aG (fügt sekundäre Gruppen hinzu), -d (ändert Heimatverzeichnis), -s (ändert Shell).
+passwd: Ändert das Passwort eines Benutzers.
+
+Beispiel: passwd benutzername.
+Flags: -d (löscht Passwort), -e (erzwingt Passwortänderung), -l (sperrt Konto).
+deluser: Löscht einen Benutzer.
+
+Beispiel: deluser benutzername.
+Flags: --remove-home (löscht Heimatverzeichnis), --backup (sichert Dateien), --system (löscht Systembenutzer).
+groupadd: Fügt eine neue Gruppe hinzu.
+
+Beispiel: groupadd gruppe.
+Flags: -g (setzt GID), -r (erstellt Systemgruppe), --help (zeigt Hilfe an).
+gpasswd: Verwalten von Gruppenzugehörigkeiten.
+
+Beispiel: gpasswd -a benutzer gruppe.
+Flags: -a (hinzufügen), -d (entfernen), -r (entfernt Gruppenpasswort).
+groups: Zeigt Gruppenzugehörigkeiten eines Benutzers an.
+
+Beispiel: groups benutzername.
+Flags: keine spezifischen Flags.
+id: Zeigt Benutzer- und Gruppen-IDs an.
+
+Beispiel: id benutzername.
+Flags: -u (zeigt nur UID), -g (zeigt nur GID), -G (zeigt alle GIDs).
+delgroup: Löscht eine Gruppe.
+
+Beispiel: delgroup gruppe.
+Flags: --only-if-empty (löscht nur leere Gruppen), --system (löscht Systemgruppe), --help (zeigt Hilfe an).
+Setup Gruppenmanagement
+Gruppen erstellen:
+sudo groupadd BH
+sudo groupadd FI
+sudo groupadd IT
+
+
+Benutzer den Gruppen hinzufügen:
+sudo usermod -aG BH benutzername
+sudo usermod -aG FI benutzername
+sudo usermod -aG IT benutzername
+
+
+Überprüfen:
+groups benutzername
+
+
+Diese Befehle erstellen die Gruppen und fügen Benutzer hinzu, um sicherzustellen, dass die Gruppenverwaltung in der LinuxVM funktioniert.
