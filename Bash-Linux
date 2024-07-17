@@ -1,0 +1,27 @@
+Nutzerverwaltung
+Nutzerverwaltung bezieht sich auf die Verwaltung von Benutzern und Benutzergruppen in einem Betriebssystem. Dies umfasst das Hinzufügen, Modifizieren und Löschen von Benutzern und Gruppen sowie das Verwalten ihrer Berechtigungen und Verzeichnisse.
+
+User/Gruppe: add mod del:
+
+add: Mit useradd und groupadd können neue Benutzer und Gruppen erstellt werden. Dabei werden Benutzerdaten in Systemdateien wie /etc/passwd und /etc/group eingetragen. Zusätzlich wird ein Home-Verzeichnis für den neuen Benutzer erstellt.
+mod: Mit usermod und groupmod können bestehende Benutzer und Gruppen geändert werden. Dies beinhaltet das Ändern von Benutzernamen, Home-Verzeichnissen, Shells und Gruppenmitgliedschaften.
+del: Mit userdel und groupdel können Benutzer und Gruppen gelöscht werden. Es ist möglich, dabei auch das Home-Verzeichnis des Benutzers zu entfernen.
+skeleton-Dateien/Verzeichnisse: In /etc/skel befinden sich Standard-Dateien und -Verzeichnisse, die in das Home-Verzeichnis neuer Benutzer kopiert werden. Diese Dateien dienen als Vorlage und können angepasst werden, um sicherzustellen, dass neue Benutzer einheitliche Konfigurationsdateien haben.
+
+Softwarepaketverwaltung
+Softwarepaketverwaltung umfasst Tools und Prozesse zur Installation, Aktualisierung und Entfernung von Softwarepaketen auf einem Betriebssystem. Hier sind einige der gängigsten Paketmanager:
+
+apt: Advanced Package Tool, hauptsächlich für Debian-basierte Systeme (wie Ubuntu). Mit apt oder apt-get können Pakete installiert, aktualisiert und entfernt werden. Es greift auf Online-Repositories zu, um Pakete herunterzuladen und ihre Abhängigkeiten zu verwalten.
+dpkg: Ein Paketverwaltungssystem für Debian. Es handelt sich um ein unterliegendes Tool, das von apt verwendet wird. Mit dpkg können Pakete manuell installiert, konfiguriert und entfernt werden. Es bietet detaillierte Kontrolle über einzelne Pakete.
+yum: Yellowdog Updater, Modified, ein Paketmanager für RPM-basierte Distributionen wie Fedora und CentOS. yum kann Pakete aus Repositories installieren und aktualisieren und kümmert sich dabei um Abhängigkeiten.
+pacman: Der Paketmanager von Arch Linux. pacman verwaltet Pakete aus offiziellen Repositories und dem Arch User Repository (AUR). Es ist für seine Geschwindigkeit und Einfachheit bekannt.
+Prozesse, Jobs, Daemons
+Prozesse, Jobs und Daemons beziehen sich auf die Verwaltung und Überwachung von laufenden Programmen und Hintergrunddiensten im Betriebssystem.
+
+top, kill:
+
+top: Ein Echtzeit-Überwachungstool, das Informationen über die laufenden Prozesse anzeigt. Es bietet eine Übersicht über CPU- und Speichernutzung, und ermöglicht es, Prozesse nach verschiedenen Kriterien zu sortieren und zu verwalten.
+kill: Ein Befehl, um Signale an Prozesse zu senden, meistens um sie zu beenden. kill kann einen Prozess anhand seiner PID (Prozess-ID) terminieren. kill -9 erzwingt ein sofortiges Beenden.
+crontab: Ein Werkzeug, um wiederkehrende Aufgaben (Cron-Jobs) zu planen. Ein crontab-Eintrag spezifiziert Befehle, die zu bestimmten Zeiten oder Intervallen ausgeführt werden sollen. Dies ist nützlich für regelmäßige Wartungsaufgaben wie Backups und Systemupdates.
+
+service: Ein Befehl, um Systemdienste zu verwalten. Mit service können Daemons (Hintergrundprozesse) gestartet, gestoppt und neu gestartet werden. Es bietet eine einheitliche Schnittstelle zur Verwaltung von Systemdiensten unabhängig vom verwendeten Init-System.
