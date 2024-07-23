@@ -1,0 +1,113 @@
+1) Softwareverwaltung
+dpkg
+Beschreibung: dpkg ist das Standard-Werkzeug zur Paketverwaltung für Debian-basierte Systeme.
+Verwendung:
+dpkg -i <package.deb>: Installiert ein .deb-Paket.
+dpkg -r <package>: Entfernt ein installiertes Paket.
+dpkg -L <package>: Listet die Dateien eines installierten Pakets auf.
+dpkg --get-selections: Listet alle installierten Pakete auf.
+deb-src
+Beschreibung: deb-src bezeichnet Quellcode-Repositories in der Datei /etc/apt/sources.list, die den Quellcode von Softwarepaketen enthalten.
+Verwendung: Wird benutzt, um Quellpakete herunterzuladen und zu kompilieren.
+Beispiel in sources.list: deb-src http://deb.debian.org/debian/ stable main
+apt
+Beschreibung: apt ist eine einfach zu bedienende Befehlszeilen-Schnittstelle für das APT-System, das zur Paketverwaltung auf Debian-basierten Systemen verwendet wird.
+Verwendung:
+apt update: Aktualisiert die Paketlisten.
+apt upgrade: Aktualisiert alle installierten Pakete.
+apt install <package>: Installiert ein Paket.
+apt remove <package>: Entfernt ein Paket.
+apt autoremove: Entfernt nicht mehr benötigte Pakete.
+apt-get
+Beschreibung: apt-get ist ein älteres Kommandozeilen-Werkzeug für die Paketverwaltung auf Debian-basierten Systemen.
+Verwendung:
+apt-get update: Aktualisiert die Paketlisten.
+apt-get upgrade: Aktualisiert alle installierten Pakete.
+apt-get install <package>: Installiert ein Paket.
+apt-get remove <package>: Entfernt ein Paket.
+apt-get autoremove: Entfernt nicht mehr benötigte Pakete.
+apt-file
+Beschreibung: apt-file wird verwendet, um Dateien in verfügbaren Paketen zu durchsuchen.
+Verwendung:
+apt-file update: Aktualisiert die apt-file Datenbank.
+apt-file search <filename>: Sucht nach einem Dateinamen in allen verfügbaren Paketen.
+apt-file list <package>: Listet alle Dateien eines Pakets auf.
+apt-cache
+Beschreibung: apt-cache wird verwendet, um Informationen über verfügbare Pakete in den APT-Cache zu durchsuchen.
+Verwendung:
+apt-cache search <package>: Sucht nach Paketen anhand eines Suchbegriffs.
+apt-cache show <package>: Zeigt detaillierte Informationen zu einem Paket.
+apt-cache policy <package>: Zeigt die Paketversionen und ihre Prioritäten.
+2) Shellbefehle
+sed
+Beschreibung: sed ist ein Stream-Editor, der Text transformiert und bearbeitet.
+Verwendung:
+sed 's/old/new/g' file.txt: Ersetzt alle Vorkommen von "old" durch "new" in der Datei file.txt.
+awk
+Beschreibung: awk ist ein Textverarbeitungswerkzeug, das speziell für das Scannen und Bearbeiten von Mustern und Textdateien entwickelt wurde.
+Verwendung:
+awk '{print $1}' file.txt: Gibt die erste Spalte jeder Zeile der Datei file.txt aus.
+grep
+Beschreibung: grep durchsucht Text nach bestimmten Mustern.
+Verwendung:
+grep 'pattern' file.txt: Sucht nach "pattern" in der Datei file.txt.
+sort
+Beschreibung: sort sortiert Textzeilen.
+Verwendung:
+sort file.txt: Sortiert die Zeilen der Datei file.txt.
+wc
+Beschreibung: wc zählt Zeilen, Wörter und Zeichen in Dateien.
+Verwendung:
+wc -l file.txt: Zählt die Zeilen in file.txt.
+touch
+Beschreibung: touch erstellt eine leere Datei oder aktualisiert den Zeitstempel einer bestehenden Datei.
+Verwendung:
+touch newfile.txt: Erstellt die Datei newfile.txt.
+head
+Beschreibung: head zeigt die ersten Zeilen einer Datei an.
+Verwendung:
+head -n 10 file.txt: Zeigt die ersten 10 Zeilen von file.txt.
+cat
+Beschreibung: cat gibt den Inhalt von Dateien aus.
+Verwendung:
+cat file.txt: Gibt den Inhalt von file.txt aus.
+Pipelines
+Beschreibung: Pipelines verbinden mehrere Befehle, sodass die Ausgabe eines Befehls als Eingabe für den nächsten Befehl dient.
+Verwendung:
+command1 | command2: Die Ausgabe von command1 wird an command2 weitergeleitet.
+Redirections
+>>: Anhängen der Ausgabe an eine Datei.
+
+command >> file.txt: Fügt die Ausgabe von command an file.txt an.
+<<: Hier-Dokument, liest Eingaben bis zu einem Abgrenzungswort.
+
+command << EOF: Führt command aus und nimmt Eingaben bis "EOF".
+>: Überschreibt die Ausgabe in eine Datei.
+
+command > file.txt: Schreibt die Ausgabe von command nach file.txt.
+<: Liest Eingaben aus einer Datei.
+
+command < file.txt: Nimmt file.txt als Eingabe für command.
+3) Netzwerktechnik & Protokolle
+|--|--|
+|Port	|Protokoll	Dienst|
+|20	|TCP	FTP-Datenübertragung|
+|21	|TCP	FTP-Steuerung|
+|22	|TCP	SSH|
+|23	|TCP	Telnet|
+|26	|TCP	SMTP (Alternativport)|
+|53	|UDP/TCP	DNS|
+|80	|TCP	HTTP|
+|110	|TCP	POP3|
+|123	|UDP	NTP|
+|134	|UDP	Securecast1|
+|143	|TCP	IMAP|
+|161	|UDP	SNMP|
+|162	|UDP	SNMP-Trap|
+|384	|TCP	IANA REX Port|
+|443	|TCP	HTTPS|
+|465	|TCP	SMTPS|
+|514	|UDP	Syslog|
+|636	|TCP	LDAPS|
+|495	|TCP	Internet-1 Protocol|
+|--|--|
