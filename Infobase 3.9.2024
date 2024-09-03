@@ -1,0 +1,64 @@
+1.
+Bruchrechnen ist das Rechnen mit Brüchen, die aus einem Zähler und einem Nenner bestehen. Die Grundoperationen sind Addition, Subtraktion, Multiplikation und Division. Beim Addieren oder Subtrahieren müssen die Nenner gleich sein. Bei der Multiplikation multipliziert man Zähler mit Zähler und Nenner mit Nenner.
+
+**Beispiele:**
+- \( \frac{1}{2} + \frac{1}{4} = \frac{2}{4} + \frac{1}{4} = \frac{3}{4} \)
+- \( \frac{2}{3} \times \frac{3}{5} = \frac{6}{15} \)
+
+2.
+Operatorpräzedenz bestimmt die Reihenfolge, in der Operationen in einem mathematischen Ausdruck ausgeführt werden. Höher priorisierte Operatoren, wie Multiplikation und Division, werden vor niedrigeren wie Addition und Subtraktion ausgeführt. Klammern können verwendet werden, um die Reihenfolge zu ändern und bestimmte Berechnungen vorzuziehen.
+
+**Beispiele:**
+- \( 3 + 5 \times 2 = 13 \) (Multiplikation vor Addition)
+- \( (3 + 5) \times 2 = 16 \) (Klammern zuerst)
+- \( 6 / 2 \times 3 = 9 \) (Multiplikation und Division von links nach rechts)
+
+3.
+Hier sind drei Beispiele für Gleichungen mit Zahlen und drei ohne Zahlen:
+
+**Mit Zahlen:**
+1. \( 3x + 2 = 11 \)
+2. \( 4y - 5 = 7 \)
+3. \( 2z^2 + 8 = 16 \)
+
+**Ohne Zahlen:**
+1. \( ax + b = c \)
+2. \( m(y - n) = p \)
+3. \( qx^2 + r = s \)
+
+4.
+Hier sind Beispiele für Ungleichungen:
+
+**Mit Zahlen:**
+1. \( 3x + 5 > 11 \)
+2. \( 2y - 4 \leq 8 \)
+
+**Ohne Zahlen:**
+1. \( ax - b \geq c \)
+2. \( mx + n < p \)
+
+**Mit Zeichenumkehr:**
+1. \( -2x > 4 \) (Umkehr ergibt \( x < -2 \))
+2. \( -3y \leq 9 \) (Umkehr ergibt \( y \geq -3 \))
+
+5.
+Impulsdiagramme, auch bekannt als Zustandsdiagramme oder Bewegungsdiagramme, sind visuelle Darstellungen der Bewegungen eines Körpers in der Physik, insbesondere in der Mechanik. Sie zeigen, wie sich der Impuls eines Objekts in Bezug auf Zeit oder andere Parameter ändert. Es gibt verschiedene Typen von Impulsdiagrammen:
+
+1. **Impuls-Zeit-Diagramm (p-t-Diagramm)**  
+   - **Beschreibung:** Zeigt die Änderung des Impulses eines Körpers über die Zeit hinweg.
+   - **Beispiel:** Ein Ball mit einem konstanten Impuls von 5 Ns (Newtonsekunden) über 10 Sekunden würde als eine horizontale Linie auf einem p-t-Diagramm dargestellt werden.
+
+2. **Kraft-Zeit-Diagramm (F-t-Diagramm)**  
+   - **Beschreibung:** Zeigt die wirkende Kraft auf einen Körper in Bezug auf die Zeit. Das Integral dieses Diagramms ergibt den Impuls (Impulsänderung).
+   - **Beispiel:** Ein Auto, das über 5 Sekunden hinweg konstant mit einer Kraft von 100 N beschleunigt, wird durch ein Rechteck auf einem F-t-Diagramm dargestellt.
+
+3. **Geschwindigkeit-Zeit-Diagramm (v-t-Diagramm)**  
+   - **Beschreibung:** Zeigt, wie sich die Geschwindigkeit eines Körpers über die Zeit ändert. Die Steigung dieses Diagramms gibt die Beschleunigung an.
+   - **Beispiel:** Ein Auto, das aus dem Stillstand gleichmäßig beschleunigt, wird in einem v-t-Diagramm als eine steigende Linie dargestellt.
+
+4. **Impuls-Orts-Diagramm (p-x-Diagramm)**  
+   - **Beschreibung:** Zeigt den Impuls eines Körpers in Abhängigkeit von seiner Position.
+   - **Beispiel:** Ein Auto mit einem konstanten Impuls von 50 Ns bewegt sich von \(x = 0\) m bis \(x = 10\) m. Das Diagramm wäre eine horizontale Linie.
+
+5. **Impuls-Beschleunigungs-Diagramm (p-a-Diagramm)**  
+   - **Beschreibung:** Zeigt die Beziehung zwischen Imp
